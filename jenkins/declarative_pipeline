@@ -18,7 +18,7 @@ pipeline {
 		  sh 'pwd'
 		  sh 'hostname'
 		  sh 'whoami'
-		  sh 'cd myfirstrepo/my-app && mvn clean && mvn package'
+		  sh 'cd myfirstJenkinsrepo/my-app && mvn clean && mvn package'
 		  }
 		  }
 		stage ('Test'){
