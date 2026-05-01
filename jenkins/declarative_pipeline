@@ -13,6 +13,8 @@ pipeline {
 		steps {
 		  echo 'This is Build stage'
 		  sh 'pwd'
+		  sh 'hostname'
+		  sh 'whoami'
 		  sh 'cd myfirstrepo/my-app && mvn clean && mvn package'
 		  }
 		  }
