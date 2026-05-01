@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Repo clone') {
             steps {
-                echo 'This is build stage'
+                echo 'This is Repo clone stage'
                 sh 'rm -rf *'
                 sh 'git clone -b maven https://github.com/jkirthi90/Jenkins_DevOps.git'
 				  }
