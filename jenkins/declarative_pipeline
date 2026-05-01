@@ -1,6 +1,9 @@
 pipeline {
-    agent any
-//node 'worker01'
+    agent {
+		node {
+			label 'worker01'
+	}
+}
     stages {
         stage('Repo clone') {
             steps {
