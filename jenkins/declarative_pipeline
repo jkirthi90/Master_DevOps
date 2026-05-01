@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'This is Repo clone stage'
                 sh 'rm -rf *'
-                sh 'git clone -b maven https://github.com/jkirthi90/Jenkins_DevOps.git'
+                sh 'git clone -b maven https://github.com/jkirthi90/myfirstJenkinsrepo.git'
 				  }
 			}
 		stage ('Build'){
