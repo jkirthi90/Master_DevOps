@@ -4,6 +4,10 @@ pipeline {
 			label 'worker01'
 	}
 }
+triggers {
+        pollSCM('* * * * *') // To trigger auto build, under configure in pipeline, select 'pipeline script from SCM'. 
+//Give Git repo detials and path and filename for the Jenkins file on the repo. The file contains the pipleline code.
+    }
     stages {
         stage('Repo clone') {
             steps {
